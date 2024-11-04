@@ -23,6 +23,9 @@ mongoose
   })
   .then(() => console.log("MongoDB Connected!"))
   .catch((err) => console.error(err));
+  app.get('/', function (req, res) {
+    res.send('Welcome');
+  });
 
 // Routes
 app.use('/api/users', userRoutes);
