@@ -14,7 +14,8 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 
 // MongoDB connection
-const mongoURL = "mongodb://localhost:27017/crud1";
+// const mongoURL = "mongodb://localhost:27017/crud1";
+const mongoURL = "mongodb+srv://sauravrop:manager@cluster0.hbykt.mongodb.net/"
 
 mongoose
   .connect(mongoURL, {
